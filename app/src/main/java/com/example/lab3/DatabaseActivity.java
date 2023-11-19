@@ -65,6 +65,12 @@ public class DatabaseActivity extends ListActivity {
                 etData.setText("");
             }
         });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(DatabaseActivity.this, "ID элемента: " + id, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     // Создаем контекстное меню
