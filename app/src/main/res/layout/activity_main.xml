@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/image_button"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:background="@drawable/_button"
+            android:onClick="onButtonClicked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="TODO" />
+
+        <CheckBox
+        android:id="@+id/checkbox"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="Выбери меня" />
+
+        <ToggleButton android:id="@+id/togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Звонок включен"
+        android:textOff="Звонок выключен"
+        android:onClick="onToggleClicked"/>
+
+        <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RadioButton
+        android:id="@+id/radio_dog"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:text="Собака" />
+        <RadioButton
+        android:id="@+id/radio_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:text="Кошка" />
+        <RadioButton
+        android:id="@+id/radio_rabbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:text="Кролик" />
+
+        </RadioGroup>
+
+        <EditText
+        android:id="@+id/user_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите имя"/>
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Очистить" />
+
+        <Button
+            android:id="@+id/buttonDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DataBase" />
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
